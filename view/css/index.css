@@ -1,0 +1,244 @@
+/* GENERAL */
+body {
+    background-color: black;
+}
+/* HISTORIA */
+#historia {
+    padding: 20px;
+}
+/* TITULO Y TEXTO */
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+.texto, h2, a{
+    color: white;
+}
+.texto-light{
+    color: white;
+}
+/* CARDS */
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+}
+.carta {
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    align-items: center;
+}
+/*Imagen de cada carta*/
+.imagen img {
+    width: 42vw !important;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* COMPETICIONES */
+.competi {
+    padding-top: 15px;
+    background-image: url("../images/index/panoramica.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 340px;
+}
+/* ACTIVIDADES */
+.modal {
+    vertical-align: middle;
+}
+/* COACHES */
+.coachtable {
+    width: 100%;
+    font-size: 1.15rem;
+}
+.coachtable .info {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    position: relative;
+
+}
+.coachtable .photo {
+    display: table-cell;
+    width: 50%;
+    overflow: hidden;
+}
+
+table{
+    width: 90%;
+}
+.entrenamiento1 {
+    background: #43a047;
+}
+.rowClase.entrenamiento1 {
+    background: none;
+    border-left: 1rem solid #43a047;
+}
+.rowClase.entrenamiento1 .hueco {
+    background: #43a047;
+}
+.entrenamiento1,
+.entrenamiento1 a {
+    color: #000000;
+}
+.entrenamiento2 {
+    background: #29b6f6;
+}
+.rowClase.entrenamiento2 {
+    background: none;
+    border-left: 1rem solid #29b6f6;
+}
+.rowClase.entrenamiento2 .hueco {
+    background: #29b6f6;
+}
+.entrenamiento2,
+.entrenamiento2 a {
+    color: #000000;
+}
+.entrenamiento3 {
+    background: #ffc107;
+}
+.rowClase.entrenamiento3 {
+    background: none;
+    border-left: 1rem solid #ffc107;
+}
+.rowClase.entrenamiento3 .hueco {
+    background: #ffc107;
+}
+.entrenamiento3,
+.entrenamiento3 a {
+    color: #000000;
+}
+.entrenamiento4 {
+    background: #7e57c2;
+}
+.rowClase.entrenamiento4 {
+    background: none;
+    border-left: 1rem solid #7e57c2;
+}
+.rowClase.entrenamiento4 .hueco {
+    background: #7e57c2;
+}
+.entrenamiento4,
+.entrenamiento4 a {
+    color: #000000;
+}
+.entrenamiento5 {
+    background: #ff7043;
+}
+.rowClase.entrenamiento5 {
+    background: none;
+    border-left: 1rem solid #ff7043;
+}
+.rowClase.entrenamiento5 .hueco {
+    background: #ff7043;
+}
+.entrenamiento5,
+.entrenamiento5 a {
+    color: #000000;
+}
+.entrenamiento6 {
+    background: #26a69a;
+}
+.rowClase.entrenamiento6 {
+    background: none;
+    border-left: 1rem solid #26a69a;
+}
+.rowClase.entrenamiento6 .hueco {
+    background: #26a69a;
+}
+.entrenamiento6,
+.entrenamiento6 a {
+    color: #000000;
+}
+.entrenamiento7 {
+    background: #ec407a;
+}
+.rowClase.entrenamiento7 {
+    background: none;
+    border-left: 1rem solid #ec407a;
+}
+.rowClase.entrenamiento7 .hueco {
+    background: #ec407a;
+}
+.entrenamiento7,
+.entrenamiento7 a {
+    color: #000000;
+}
+.entrenamiento8 {
+    background: #536dfe;
+}
+.rowClase.entrenamiento8 {
+    background: none;
+    border-left: 1rem solid #536dfe;
+}
+.rowClase.entrenamiento8 .hueco {
+    background: #536dfe;
+}
+.entrenamiento8,
+.entrenamiento8 a {
+    color: #000000;
+}
+.entrenamiento9 {
+    background: #ffffff;
+}
+.rowClase.entrenamiento9 {
+    background: none;
+    border-left: 1rem solid #ffffff;
+}
+.rowClase.entrenamiento9 .hueco {
+    background: #ffffff;
+}
+.entrenamiento9,
+.entrenamiento9 a {
+    color: #000000;
+}
+.entrenamiento10 {
+    background: #76ff03;
+}
+.rowClase.entrenamiento10 {
+    background: none;
+    border-left: 1rem solid #76ff03;
+}
+.rowClase.entrenamiento10 .hueco {
+    background: #76ff03;
+}
+.entrenamiento10,
+.entrenamiento10 a {
+    color: #000000;
+}
+th,td{
+    color: white;
+}
+.entrenamiento11 {
+    background: #3e2723;
+}
+.rowClase.entrenamiento11 {
+    background: none;
+    border-left: 1rem solid #3e2723;
+}
+.rowClase.entrenamiento11 .hueco {
+    background: #3e2723;
+}
+.entrenamiento11,
+.entrenamiento11 a {
+    color: #000000;
+}
+
+
+@media screen and (max-width: 768px) {
+    .imagen img {
+        width: 100% !important;
+    }
+
+    .ocultar{
+        display: none;
+    }
+}

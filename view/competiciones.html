@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/competiciones.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <title>Competiciones</title>
+    <link rel="shortcut icon" href="images/index/Logo_Negro.png">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-expand-lg d-flex  pt-3 fixed-top list-unstyled " id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                <div class="nav-item text-center">
+                    <a href="../index.html#historia_tit" class="d-block">
+                        <img src="iconos/historia1.png" alt="" id="img1">
+                        <p class="texto-light"> Historia</p>
+                    </a>
+                </div>
+
+                <div class="nav-item text-center">
+                    <a href="competiciones.html" class="d-block">
+                        <img src="iconos/localizacion1.png" alt="" id="img2">
+                        <p class="texto-light"> Competiciones</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center">
+                    <a href="../index.html#coaches" class="d-block">
+                        <img src="iconos/coaches1.png" alt="" id="img3">
+                        <p class="texto-light">Coaches</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center">
+                    <a href="../index.html#actividades" class="d-block">
+                        <img src="iconos/actividades1.png" alt="" id="img4">
+                        <p class="texto-light"> Actividades</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center">
+                    <a href="../index.html#horarios" class="d-block">
+                        <img src="iconos/horario1.png" alt="" id="img5">
+                        <p class="texto-light">Horarios</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center">
+                    <a href="../index.html#categoria" class="d-block">
+                        <img src="iconos/tarifas1.png" alt="" id="img6">
+                        <p class="texto-light">Tarifas</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center ">
+                    <a href="atletas.html" class="d-block">
+                        <img src="iconos/contacto1.png" alt="" id="img7">
+                        <p class="texto-light" href="atletas.html">Atletas</p>
+                    </a>
+                </div>
+                <div class="nav-item d-flex flex-column justify-content-center  align-items-center" id="login">
+                    <small id="loggedUser" class="text-light"></small>
+                    <small id="loginType" class="text-light"></small>
+                    <button class="btn btn-light" data-target="#loginModal" data-toggle="modal"
+                        type="button">LOGIN</button>
+                    <button class="btn btn-light" id="logout" type="button">LOGOUT</button>
+                </div>
+                <div class="nav-item d-flex  align-items-center">
+                    <a class="badge badge-pill badge-light p-2" href="#" id="modoclaro1"
+                        onclick="changeBodyClaroIndex()">Modo Claro</a>
+                </div>
+                <div class="nav-item" id="idiomas">
+                    <a class="badge badge-pill badge-light px-3" href="./competiciones.html#es" id="es_competis">ES</a>
+                    <a class="badge badge-pill badge-light px-3" href="./competiciones.html#eus"
+                        id="eus_competis">EUS</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="loginModal" role="dialog"
+            tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <form id="loginForm">
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="username">Nombre de Usuario</label>
+                                <input class="form-control" id="username" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input class="form-control" id="password" type="password" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" id="sendLoginData">Login</button>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Competiciones-->
+        <br> <br> <br> <br>
+
+        <div class="competiciones align-items-center m-4 text-center py-4">
+            <h1 class="titulo_principal">Competiciones</h1>
+            <div class="row">
+                <button type="button" class="btn btn-secondary m-3" id="oficial">
+                    OFICIALES
+                </button>
+                <button type="button" class="btn btn-success m-3" id="sanctional">
+                    SANCTIONALS
+                </button>
+                <button type="button" class="btn btn-danger m-3" id="spartanrace">
+                    SPARTAN RACE
+                </button>
+            </div>
+        </div>
+
+        <!--Competiciones: Official Crossfit Games-->
+
+        <div id="div1">
+            <hr>
+            <h2><span>1. OFFICIAL CROSSFIT GAMES</span></h2>
+            <hr>
+            <div class="row d-flex justify-content-between">
+                <div class="img">
+                    <img src="images/index/CF_Games.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-6 columns" id="textComp1">
+                    <p>Esta competición se lleva a cabo cada verano desde el 30 de junio de 2007 y en ella, los atletas
+                        compiten en rutinas de ejercicios que les son entregadas pocas horas antes de salir a la pista.
+                        Muchas de estas rutinas, comprenden levantamientos estándar y movimientos gimnásticos, pero a
+                        veces incluyen elementos sorpresa que no forman parte del régimen típico de CrossFit; en algunos
+                        eventos se incluye la natación o ejercicios de habilidad como lanzamiento de pelotas..</p>
+                    <p>Este evento va dedicado a descubrir a las personas más en forma sobre La Tierra o «Fittest on
+                        Earth».</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Competiciones: SANCTIONALS-->
+
+        <div id="div2">
+            <hr>
+            <h2><span>2. CROSSFIT SANCTIONALS</span></h2>
+            <hr>
+            <div class="row d-flex justify-content-between">
+                <div class="img">
+                    <img src="images/index/sanctionals.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 columns" id="textComp2">
+                    <p>
+                        Son uno de los modos de clasificación actuales y que sustituyen a los antiguos Regionals desde
+                        2019. Los Sanctioned Events son competiciones ya existentes de Fitness que no estaban
+                        relacionadas con la marca CrossFit®, por lo que funcionaban de forma paralela a los CrossFit
+                        Games.</p>
+                    <p>
+                        Al suprimirse los Regionals, la organización de los juegos contactó con varias de estas
+                        competiciones para que pasasen a formar parte del campeonato de CrossFit y así crear una fase en
+                        la que los ganadores de cada Sanctioned Event, tendrían una clasificación directa para los
+                        CrossFit Games. En la edición de 2019, ya contaban con 15 eventos que cumplían los requisitos
+                        para formar parte de esta fase previa
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!--Competiciones: SPARTAN RACE-->
+
+        <div id="div3">
+            <hr>
+            <h2><span>3. SPARTAN RACE</span></h2>
+            <hr>
+            <div class="row d-flex justify-content-between">
+                <div class="img">
+                    <img src="images/index/fuego.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-6 columns" id="textComp3">
+                    <p>Spartan Race es una serie de carreras de obstáculos de distancias diversas y dificultades varias.
+                        Van desde las 3 millas hasta distancias de maratón. Se llevan a cabo principalmente en los
+                        Estados Unidos, pero también se realizan en 30 países, incluidos Canadá, Corea del Sur,
+                        Australia, Chile y varios países europeos.
+                    </p>
+                    <p> Las formas de esta carrera incluyen el Spartan Sprint, donde se corren 3 millas con 20
+                        obstáculos, el Spartan Super, de 8 millas con 25 obstáculos, la Spartan Beast, de 13 millas con
+                        30 obstáculos, y el Spartan Ultra, de 30 millas con 60 obstáculos. 11​ Los obstáculos en sí
+                        también varían de una carrera a otra..</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Noticias-->
+        <!------ Include the above in your HEAD tag ---------->
+
+        <!-- Team -->
+        <section id="team" class="pb-5">
+
+            <h5 class="section-title h1">NOTICIAS</h5>
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img src="images/index/jon_coach.jpg" alt="" width="400px"></p>
+                                        <h4 class="card-title">La pregunta del millón:</h4>
+                                        <p class="card-text"> ¿Que necesito antes de
+                                            empezar a practicar crossfit?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title"> Pues bien, fuera miedos: para ser
+                                            crossfitero no es necesario en forma.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="image-flip">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/index/alex_coach.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Orígenes</h4>
+                                        <p class="card-text">¿Cuales son los orígenes del crossfit?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Gregg Glassman es el fundador de este movimiento que nace
+                                            como tal en California, Estados Unidos.</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="image-flip">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/index/tasius_coach.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Beneficios</h4>
+                                        <p class="card-text">¿Cuáles son principales beneficios del crossfit?</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-3">
+                                        <h4 class="card-title">Es un entrenamiento completo. En lugar de trabajar en
+                                            algo
+                                            específico, se trabaja todo el cuerpo en conjunto.
+
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="image-flip">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/index/julen_coach.jpg" alt="card image">
+                                        </p>
+                                        <h4 class="card-title">Desventajas</h4>
+                                        <p class="card-text">¿Cuáles son las desventajas del crossfit? </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Para realizar determinadas técnicas es necesario contar
+                                            con un entrenador.
+
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+
+
+            </div>
+
+        </section>
+        <!-- Team -->
+        <!--Go top-->
+
+        <div class="go-top">
+            <span><img src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-0.jpg" alt=""
+                    height="50px" width="50px"></span>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="row justify-content-between">
+            <div class="col-4 ">
+                <div class="row ">
+                    <div class="col-12 col-md-6 ml-3">
+                        <p>
+                            <a href="https://www.instagram.com/dark_phoenix_crossfit/?hl=es" class="enlace"
+                                target="_blank">Dark
+                                Phoenix CrossFit
+                                en instagram</a>
+                        </p>
+                        <dl>
+                            <dt>Teléfono</dt>
+                            <dd>695 717 341</dd>
+                            <dt>Dirección</dt>
+                            <dd>
+                                <address>
+                                    Calle Txomin Egileor, 52<br>
+                                    Polígono zugutzu nave 12<br>
+                                    48960 Galdácano, Vizcaya
+                                </address>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <a href="http://journal.crossfit.com/start.tpl?version=CFJ-white123x63" target="_blank"
+                            title="CrossFit Journal: The Performance-Based Lifestyle Resource"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4 ">
+                <a href="/" class="enlace">Home</a>
+
+                <br><a href="//normasdelbox.aspx" class="enlace">Aviso legal y condiciones del Box</a>
+                <br>
+                <a href="//wodbuster.com/avisolegal.aspx" class="enlace">Aviso legal</a>
+                <br>
+                <a href="//wodbuster.com/politicadeprivacidad.aspx" class="enlace">Política de privacidad</a>
+                <br>
+                <a href="//wodbuster.com/cookies.aspx" class="enlace">Política de cookies</a>
+            </div>
+            <div class="col-3 col-md-2 footer-buttons">
+                <a class="btn btn-primary btn-block" href="contacto.html" style="color: white;">
+                    Contacto
+                    <!--<button type="button" class="btn btn-primary btn-block">Contacto</button>-->
+                    <!-- Cambio esto por un a con las clases del btn para que el enlace no sea solamente justo encima del texto -->
+                </a>
+                <button type="button" class="btn btn-secondary btn-block" data-target="#dudasModal"
+                    data-toggle="modal">Comentario
+                </button>
+                <small id="commentNotAuth" class="text-light d-none">Para enviar comentarios debes iniciar
+                    sesión</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Dudas -->
+    <div aria-hidden="true" aria-labelledby="dudasModal" class="modal fade" id="dudasModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cometarios</h5>
+                </div>
+                <form id="dudasForm">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="commentUsername">Nombre:</label>
+                            <input class="form-control" id="commentUsername" data-id="" type="text" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentSubject">Asunto</label>
+                            <input class="form-control" id="commentSubject" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="commentBody">Comentario</label>
+                            <textarea class="form-control" id="commentBody" type="text">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="button" id="sendComment">Comment</button>
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/competiciones.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+nav {
+    background-color: black;
+}
+
+.container-fluid > *:nth-child(2) {
+  margin-top: 2em !important;
+}
+
+nav img {
+    width: 3vw;
+    height: 5vh;
+}
+
+.user {
+  position: relative;
+}
+
+.userPages {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -10rem;
+  font-size: 1.2vw;
+  background-color: #343a40;
+}
+
+.userPages button, .userPages a {
+  text-decoration: none;
+  background-color: #343a40;
+  color: #fff !important;
+}
+
+.go-top {
+
+  position: fixed;
+  bottom: 30px;
+  left: 85%;
+  border: 3px solid #12e1ec;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  /*Al principio no se verá, cuando bajemos 500px saldrá*/
+  display: none;
+  overflow-x: hidden;
+  z-index: 3;
+
+}
+
+/*Footer*/
+
+footer .row {
+  max-width: 80rem !important;
+}
+
+footer,
+.mainTitle {
+  background: #000000;
+  color: #ffffff;
+  padding: 40px;
+}
+
+footer .row {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  width: 100%;
+}
+
+footer .row .row{
+  margin: 0 -0.9375rem;
+  max-width: none;
+  width: auto;
+}
+
+footer p {
+  font-family: inherit;
+  font-size: 1rem !important;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+
+footer a {
+  color: #008CBA;
+}
+
+
+footer a:hover {
+  text-decoration: none;
+}
+
+footer dl {
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem !important;
+  line-height: 1.6;
+  list-style-position: outside;
+  margin-bottom: 1.25rem;
+}
+
+footer dl dt {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+footer dl dd {
+  margin-bottom: 0.75rem;
+}
+
+footer address {
+
+  display: block;
+  font-style: italic;
+}
+
+@media (max-width:768px) {
+  nav a img{
+    display: none;
+  }
+  .userPages {
+    position: relative;
+    display: block;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 1rem 0;
+    background-color: transparent;
+  }
+
+  .userPages button {
+    background-color: #fff;
+    color: #000;
+  }
+
+  footer, footer p, footer dl, .footer-buttons button, .footer-buttons a{
+    font-size: 2vw !important;
+  }
+
+  .footer-buttons button {
+    padding: 1vw 1vh;
+  }
+
+  #commentNotAuth {
+    font-size: 1.45vw;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .user:hover .userPages {
+    display: block !important;
+  }
+
+  .userPages .esquina {
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #343a40;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  .userPages button:hover, .userPages a:hover {
+    background-color: #2d3139;
+  }
+}
+
+@media (max-width:800px) {
+
+
+}

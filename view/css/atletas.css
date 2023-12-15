@@ -1,0 +1,57 @@
+body {
+    background-color: black ;
+}
+/*Cards de los Atletas con toda la información*/
+.card {
+    padding: 20px;
+    margin: 20px;
+    background-color: #bfbfbf ;
+    align-items: center;
+}
+.card a{
+    color:#7904c7;
+    text-decoration: underline;
+}
+.rounded-circle {
+    background-position: center center !important;
+    background-size: cover !important;
+}
+.profile {
+    height: 14rem;
+    width: 14rem
+}
+.modal-body .rounded-circle {
+    height: 100px;
+    width: 100px;
+}
+h1 {
+    color: white;
+}
+#insertar .modal-content{
+	background-color: #bfbfbf;
+}
+/*Tabla de atletas de la categoria elegida*/
+#categorias {
+    background-image: url("../images/categorias.jpg") !important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background: rgba(0, 0, 0, 0.4);
+}
+#categorias h1 {
+    background-color: black;
+}
+#categorias table {
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    border-collapse: separate;
+    background-color:grey !important;
+}
+#categorias th {
+    border-top: 0;
+}
+/*Modal de atletas del entrenador elegido*/
+#entrenadores .modal-content{
+	background-color:#bfbfbf ;
+}

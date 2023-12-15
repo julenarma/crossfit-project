@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap"
+          rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="images/index/Logo_Negro.png">
+</head>
+
+<body>
+<div class="container-fluid p-0">
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-expand-lg d-flex  pt-3 fixed-top list-unstyled " id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+        <div class="nav-item text-center">
+            <a href="../index.html#historia_tit" class="d-block">
+                <img src="iconos/historia1.png" alt="">
+                <p class="text-light"> Historia</p>
+            </a>
+        </div>
+
+        <div class="nav-item text-center">
+            <a href="competiciones.html" class="d-block">
+                <img src="iconos/localizacion1.png" alt="">
+                <p class="text-light"> Competiciones</p>
+            </a>
+        </div>
+        <div class="nav-item text-center">
+            <a href="../index.html#coaches" class="d-block">
+                <img src="iconos/coaches1.png" alt="">
+                <p class="text-light">Coaches</p>
+            </a>
+        </div>
+        <div class="nav-item text-center">
+            <a href="../index.html#actividades" class="d-block">
+                <img src="iconos/actividades1.png" alt="">
+                <p class="text-light"> Actividades</p>
+            </a>
+        </div>
+        <div class="nav-item text-center">
+            <a href="../index.html#horarios" class="d-block">
+                <img src="iconos/horario1.png" alt="">
+                <p class="text-light">Horarios</p>
+            </a>
+        </div>
+        <div class="nav-item text-center">
+            <a href="../index.html#categoria" class="d-block">
+                <img src="iconos/tarifas1.png" alt="">
+                <p class="text-light">Tarifas</p>
+            </a>
+        </div>
+        <div class="nav-item text-center ">
+            <a href="atletas.html" class="d-block">
+                <img src="iconos/atletas1.png" alt="" id="img7">
+                <p class="text-light" href="atletas.html">Atletas</p>
+            </a>
+        </div>
+        <div class="nav-item d-flex flex-column justify-content-center  align-items-center" id="login">
+            <small id="loggedUser" class="text-light"></small>
+            <small id="loginType" class="text-light"></small>
+            <button class="btn btn-light" data-target="#loginModal" data-toggle="modal" type="button">LOGIN</button>
+            <button class="btn btn-light" id="logout" type="button">LOGOUT</button>
+        </div>
+        <!-- <div class="nav-item d-flex  align-items-center">
+            <a class="badge badge-pill badge-light p-2" href="#" id="modoclaro1" onclick="changeBodyClaroIndex()">Modo Claro</a>
+        </div> -->
+        <div class="nav-item" id="idiomas">
+            <a class="badge badge-pill badge-light px-3" href="../view/contacto.html#es"  id="es_contacto">ES</a>
+            <a class="badge badge-pill badge-light px-3" href="../view/contacto.html#eus"  id="eus_contacto">EUS</a>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="loginModal" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                </div>
+                <form id="loginForm">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="username">Nombre de Usuario</label>
+                            <input class="form-control" id="username" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input class="form-control" id="password" type="password" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="button" id="sendLoginData">Login</button>
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Imagen-->
+    <div class="img-header">
+        <!--Dentro de la imagen, el texto-->
+        <div class="header-info">
+
+            <h2 class="titulo_contacto">CONTACTO</h2>
+            <hr>
+            <p class="texto_contacto">PIDE TUS CLASES DE PRUEBA GRATUITA O PREGUNTANOS CUALQUIER DUDA</p>
+            <p class="texto_covid ml-4 mr-4">Para controlar y evitar nuevos brotes de COVID-19, este tipo de instalaciones está llevando a cabo una serie de pautas y medidas de precaución, de cara a hacerlas lo más seguras posibles. Entre ellas y como recuerda Berjón, se han limitado aforos y establecido citas previas y turnos horarios. Además, es obligatorio el uso de mascarilla en las instalaciones mientras no se está realizando ninguna actividad y la desinfección de manos con gel hidroalcohólico, así como la del material utilizado una vez se acaba la sesión con él.</p>
+            <p class="texto_covid2 m-4">De las medidas comentadas, la más importante para el virólogo es la reducción del aforo, o bien por cita previa o cerrandolo cuando se llega a un número de personas por zona. De esta manera, es más fácil garantizar la distancia de seguridad entre los usuarios que acudan a las instalaciones. Además, distingue entre las distintas zonas de ejercicio.</p>
+        </div>
+
+    </div>
+    <!--Instalaciones-->
+    <!-- Grid row -->
+    <div class="row mt-5 m-0">
+
+        <!-- Grid column -->
+        <div class="col-md-12 d-flex justify-content-center mb-5">
+            <h2 class="titulo display-4" id="instalaciones"> Instalaciones</h2>
+        </div>
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+    <div class="gallery" id="gallery">
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 2">
+            <img class="img-fluid" src="images/box_images/ElBoxFoto1.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="images/box_images/ElBoxFoto2.jpg" alt="Card image cap">
+        </div>
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="images/box_images/ElBoxFoto3.jpg" alt="Card image cap">
+        </div>
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 2">
+            <img class="img-fluid" src="images/box_images/ElBoxFoto4.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 2 imgs">
+            <img class="img-fluid" src="images/box_images/ElBoxFoto6.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src=" images/box_images/ElBoxFoto5.jpg" alt="Card image cap">
+        </div>
+        <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+    <!--Localización-->
+
+    <div class="seccion1 jumbotron">
+        <h2><span><b class="titulo_contacto2"> Localización</b></span></h2>
+        <h3><b class="texto_contacto2">Nuestro destino nunca es un lugar, sino una nueva forma de ver las cosas</b></h3>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.0158999799096!2d-2.855696749086401!3d43.23012628760047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e494c114ba84d%3A0x6a2e62c27b265fa0!2sCalle+Txomin+Egileor%2C+52%2C+48960+Gald%C3%A1cano%2C+Vizcaya!5e0!3m2!1ses!2ses!4v1556615433616!5m2!1ses!2ses"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    </div>
+
+    <!--Go top-->
+
+    <div class="go-top">
+            <span><img src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-0.jpg" alt=""
+                       height="50px" width="50px"></span>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="row justify-content-between">
+            <div class="col-4 ">
+                <div class="row ">
+                    <div class="col-12 col-md-6 ml-3">
+                        <p>
+                            <a href="https://www.instagram.com/dark_phoenix_crossfit/?hl=es" class="enlace"
+                               target="_blank">Dark
+                                Phoenix CrossFit
+                                en instagram</a>
+                        </p>
+                        <dl>
+                            <dt>Teléfono</dt>
+                            <dd>695 717 341</dd>
+                            <dt>Dirección</dt>
+                            <dd>
+                                <address>
+                                    Calle Txomin Egileor, 52<br>
+                                    Polígono zugutzu nave 12<br>
+                                    48960 Galdácano, Vizcaya
+                                </address>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <a href="http://journal.crossfit.com/start.tpl?version=CFJ-white123x63" target="_blank"
+                           title="CrossFit Journal: The Performance-Based Lifestyle Resource"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4 ">
+                <a href="/" class="enlace">Home</a>
+
+                <br><a href="//normasdelbox.aspx" class="enlace">Aviso legal y condiciones del Box</a>
+                <br>
+                <a href="//wodbuster.com/avisolegal.aspx" class="enlace">Aviso legal</a>
+                <br>
+                <a href="//wodbuster.com/politicadeprivacidad.aspx" class="enlace">Política de privacidad</a>
+                <br>
+                <a href="//wodbuster.com/cookies.aspx" class="enlace">Política de cookies</a>
+            </div>
+            <div class="col-3 col-md-2 footer-buttons">
+                <a class="btn btn-primary btn-block" href="contacto.html" style="color: white;">
+                    Contacto
+                </a>
+                <button type="button" class="btn btn-secondary btn-block" data-target="#dudasModal"
+                        data-toggle="modal">Comentario
+                </button>
+                <small id="commentNotAuth" class="text-light d-none">Para enviar comentarios debes iniciar sesión</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Dudas -->
+    <div aria-hidden="true" aria-labelledby="dudasModal" class="modal fade" id="dudasModal" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cometarios</h5>
+                </div>
+                <form id="dudasForm">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="commentUsername">Nombre:</label>
+                            <input class="form-control" id="commentUsername" data-id="" type="text" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentSubject">Asunto</label>
+                            <input class="form-control" id="commentSubject" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="commentBody">Comentario</label>
+                            <textarea class="form-control" id="commentBody" type="text">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="button" id="sendComment">Comment</button>
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/competiciones.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

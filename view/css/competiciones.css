@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+/*Navbar*/
+
+.navbar li a {
+
+    text-decoration: none;
+}
+
+
+/*Competiciones*/
+.competiciones {
+
+    background-image: url("../images/index/panoramica.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 40vh;
+
+}
+
+.competiciones h1 {
+
+    color: white;
+}
+
+
+.competiciones .row {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.competiciones button {
+
+    height: 80px;
+    width: 150px;
+
+}
+
+#div1,
+#div2,
+#div3 {
+
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+
+}
+
+#div1 h2,
+#div2 h2,
+#div3 h2 {
+
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+#div1 h2 span,
+#div2 h2 span,
+#div3 h2 span {
+
+    color: black;
+    display: inline-block;
+    padding: 0 2rem;
+    position: relative;
+    font-size: 3rem;
+}
+
+#div1 hr,
+#div2 hr,
+#div3 hr {
+
+
+    height: 1.5px;
+    background: black;
+    margin: 15px 0;
+}
+
+
+#div1 .row,
+#div2 .row,
+#div3 .row {
+
+    background-color: rgb(247, 247, 247);
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+
+}
+
+#div1 .img,
+#div2 .img,
+#div3 .img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#div1 img,
+#div2 img,
+#div3 img {
+    height:50vh;
+    width: 50vh;
+    object-fit: cover;
+}
+
+#div1 img:hover,
+#div2 img:hover,
+#div3 img:hover {
+    transition: 0.5s;
+    transform: scale(1.5) rotate(-30deg);
+    border-radius: 50%;
+    object-fit: cover;
+
+
+}
+
+/*Noticias*/
+#team {
+    background: #173d50 !important;
+  width: 95%;
+  margin: auto;
+}
+
+#team .row{
+
+width: 90%;
+margin: auto;
+
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+
+    width: 80%;
+    margin:  auto;
+
+}
+
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    
+}
+
+.frontside {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+/*Va a estar en su sitio por mucho que bajemos la página*/
+.go-top {
+
+    position: fixed;
+    bottom: 30px;
+    left: 88%;
+    border: 3px solid #1c2f71;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    /*Al principio no se verá, cuando bajemos 500px saldrá*/
+    display: none;
+    z-index: 3;
+
+
+}
+
+
+@media only screen and (max-width:800px) {
+
+    /*Competiciones*/
+    .competiciones {
+
+        height: 100vh;
+
+    }
+
+    .competiciones h1 {
+
+        margin-top: 30px;
+        font-size: 48px;
+
+    }
+
+    .competiciones .row {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .competiciones button {
+
+        height: 75px;
+        width: 150px;
+
+    }
+
+    /*Competiciones divs*/
+
+    #div1 .row,
+    #div2 .row,
+    #div3 .row {
+
+        background-color: rgb(247, 247, 247);
+        padding: 40px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #div1 .img,
+    #div2 .img,
+    #div3 .img {
+
+        justify-content: center;
+        object-fit: cover;
+        margin: 0px auto;
+        border-radius: 50%;
+
+    }
+
+    .backside .card h4 {
+
+        margin-top: 50px;
+    }
+}

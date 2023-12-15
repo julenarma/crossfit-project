@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view/css/bootstrap.css">
+    <link rel="stylesheet" href="view/css/index.css">
+    <link rel="stylesheet" href="view/css/main.css">
+    <title>Pagina de Inicio</title>
+    <link rel="shortcut icon" href="view/images/index/Logo_Negro.png">
+</head>
+
+<body id="pageBody">
+    <div class="container-fluid p-0">
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-expand-lg d-flex  pt-3 fixed-top list-unstyled " id="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                <div class="nav-item text-center ">
+                    <a href="#historia" class="d-block">
+                        <img src="view/iconos/historia1.png" alt="" id="img1">
+                        <p class="texto-light"> Historia</p>
+                    </a>
+                </div>
+
+                <div class="nav-item text-center ">
+                    <a href="view/competiciones.html" class="d-block">
+                        <img src="view/iconos/localizacion1.png" alt="" id="img2">
+                        <p class="texto-light"> Competiciones</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center ">
+                    <a href="#coaches" class="d-block">
+                        <img src="view/iconos/coaches1.png" alt="" id="img3">
+                        <p class="texto-light">Coaches</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center ">
+                    <a href="#actividades" class="d-block">
+                        <img src="view/iconos/actividades1.png" alt="" id="img4">
+                        <p class="texto-light"> Actividades</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center ">
+                    <a href="#horarios" class="d-block">
+                        <img src="view/iconos/horario1.png" alt="" id="img5">
+                        <p class="texto-light">Horarios</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center ">
+                    <a href="#categoria" class="d-block">
+                        <img src="view/iconos/tarifas1.png" alt="" id="img6">
+                        <p class="texto-light">Tarifas</p>
+                    </a>
+                </div>
+                <div class="nav-item text-center ">
+                    <a href="view/atletas.html" class="d-block">
+                        <img src="view/iconos/atletas1.png" alt="" id="img7">
+                        <p class="texto-light" href="view/atletas.html">Atletas</p>
+                    </a>
+                </div>
+                <div class="nav-item d-flex flex-column text-center align-items-right" id="login">
+                    <small id="loggedUser" class="texto-light"></small>
+                    <small id="loginType" class="texto-light"></small>
+                    <button class="btn btn-light" data-target="#loginModal" data-toggle="modal"
+                        type="button">LOGIN</button>
+                    <button class="btn btn-light" id="logout" type="button">LOGOUT</button>
+                </div>
+                <div class="nav-item d-flex  align-items-center">
+                    <a class="badge badge-pill badge-light p-2" href="#" id="modoclaro1"
+                        onclick="changeBodyClaroIndex()">Modo Claro</a>
+                </div>
+                <div class="nav-item " id="idiomas">
+                    <a class="badge badge-pill badge-light px-3 translate" href="#es" id="es_index">ES</a>
+                    <a class="badge badge-pill badge-light px-3 translate" href="#eu" id="eus_index">EUS</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="loginModal" role="dialog"
+            tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    <form id="loginForm">
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="username">Nombre de Usuario</label>
+                                <input class="form-control" id="username" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input class="form-control" id="password" type="password" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" id="sendLoginData">Login</button>
+                            <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Video-->
+        <div class="video position-relative">
+            <video class="w-100 h-50" autoplay loop muted>
+                <source src="view/Videos/CF_Games_Def.mp4" type="video/mp4" />
+                <div>
+                    <a href="index.html" class="d-block">
+                        <img src="view/images/index/Logo_Negro.png" alt="">
+                    </a>
+                </div>
+            </video>
+            <div class="fade-video w-100"></div>
+        </div>
+
+        <!--Historia-->
+        <div id="historia">
+            <h2 id="historia_tit" class="titulo">Historia </h2>
+            <div class="carta d-flex flex-column flex-md-row">
+                <div class="grupo order-1 order-md-0 mr-md-5">
+                    <div id="xx" class="texto">
+                        CrossFit es una técnica de entrenamiento que conecta movimientos de diferentes
+                        disciplinas, tales como la halterofilia, el entrenamiento metabólico o el gimnástico.
+
+                        Consiste en acometer un programa de ejercicios (flexiones, tracción, etc), en un tiempo
+                        determinado y con un número definido de veces.
+
+                        Esta noción tiene como principio mantener intacta la motivación de los deportistas a largo
+                        plazo. Se puede realizar de manera individual o en grupo, y las sesiones suelen ser cortas,
+                        variadas y adaptables en función del nivel de cada participante.
+                    </div>
+                </div>
+                <div class="imagen order-0 order-md-1"><img src="view/images/index/Logo_Black.jpg" alt=""></div>
+            </div>
+
+            <div class="carta d-flex flex-column flex-md-row">
+                <div class="imagen mb-5 mb-md-0 order-md-0 mr-md-5"><img src="view/images/index/CF_Games.jpg" alt="">
+                </div>
+                <div class="grupo order-md-1">
+                    <div class="texto" id="langtext2">El creador del CrossFit, Greg Glassman ha diseñado varios grupos,
+                        unos
+                        bautizados
+                        con nombres de mujeres en referencia a los huracanes americanos, y otros con nombres de héroes
+                        militares, policías, o bomberos, entre otros, como homenaje.
+
+                        Existen también otros grupos que no tienen nombre, simplemente la descripción de los ejercicios.
+                        El tiempo de ejecución de cada grupo puede variar, desde solo 5 minutos hasta casi 30 minutos,
+                        sin contar el calentamiento y la vuelta a la calma.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Instalaciones -->
+        <div class="contacto">
+            <h2 class="titulo" id="instalaciones"> Conoce nuestras instalaciones</h2>
+            <div class="text-center texto py-4" id="yy">
+                Nuestro centro deportivo de alto rendimiento se encuentra a escasos metros de la parada de tren de
+                Zuhatzu, Galdakao.
+                Si quieres probar tus habilidades ven a vernos.
+                <br><span>PRIMERA CLASE GRATIS.</span><br>
+                <a class="btn btn-primary mt-5 lang" href="view/contacto.html">Conoce nuestras Instalaciones
+                    <br></a>
+            </div>
+        </div>
+        <!-- competiciones -->
+        <h2 class="titulo" id="competiciones"> Competiciones</h2>
+        <div class="competi" id="competis">
+            <div class="text-center texto mt-5">
+                <a class="btn btn-primary lang" href="view/competiciones.html" id="langtext4">¿Quieres
+                    participar
+                    en una competición? <br>
+                    Te gustaria desafiarte a ti mismo poniendote a prueba contra las personas mas entrenadas
+                    del mundo.
+                    <br>
+                    Descubre las competiciones mas competitivas de este deporte.
+                </a>
+            </div>
+        </div>
+        <!-- coaches -->
+        <h2 class="titulo" id="entrenador">Coaches</h2>
+        <div class="mt-5" id="coaches">
+            <div class="row justify-content-center m-0">
+                <div class="col-sm-10 col-md-4 mb-1 mb-md-1">
+                    <div class="coachtable">
+                        <div class="photo">
+                            <img class="img-fluid"
+                                src="https://cdn.wodbuster.com/static/atletas/a/5/3/a536eab8-617f-4cf6-804d-bc3c98f6aa7a.jpg?t=637287215444130000">
+                        </div>
+                        <div class="info">
+                            Jon
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-4 mb-1 mb-md-1">
+                    <div class="coachtable">
+                        <div class="info">
+                            Julen
+                        </div>
+                        <div class="photo">
+                            <img class="img-fluid"
+                                src="https://cdn.wodbuster.com/static/atletas/3/4/0/3404bc2a-c83b-466e-89e5-329c6841cade.jpg?t=637042493976500000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 d-none d-md-block"></div>
+
+                <div class="col-sm-10 mb-1 col-md-4">
+                    <div class="coachtable">
+                        <div class="info">
+                            Alex
+                        </div>
+                        <div class="photo">
+                            <img class="img-fluid"
+                                src="https://cdn.wodbuster.com/static/atletas/c/4/c/c4c137d7-a841-4f63-87b6-cc71de87982a.jpg?t=637184208221600000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-4">
+                    <div class="coachtable">
+                        <div class="photo">
+                            <img class="img-fluid"
+                                src="https://cdn.wodbuster.com/static/atletas/9/9/5/99518bf7-3c17-479b-93a9-b76e9cf41215.jpg?t=637375327482870000">
+                        </div>
+                        <div class="info">
+                            Tasio
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- actividades -->
+        <div id="actividades" class="m-4 text-center py-4 ">
+            <h2 class="titulo" id="actividad">Actividades</h2>
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target="#myModal"
+                onclick="datos('0')">
+                CrossFit
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 id="modal-titulo">CrossFit</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body" id="modal-texto">
+                            Clases dirigidas que estan formadas de un Warm-up, un apartado de fuerza y el WOD
+                            principal.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary m-3" data-toggle="modal" data-target="#myModal"
+                onclick="datos('1')">
+                Haltero
+            </button>
+            <button type="button" class="btn btn-success m-3" data-toggle="modal" data-target="#myModal"
+                onclick="datos('2')">
+                Gymnastics
+            </button>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"
+                onclick="datos('3')">
+                Mobility
+            </button>
+            <button type="button" class="btn btn-warning m-3" data-toggle="modal" data-target="#myModal"
+                onclick="datos('4')">
+                Competitors
+            </button>
+            <button type="button" class="btn btn-info m-3" data-toggle="modal" data-target="#myModal"
+                onclick="datos('5')">
+                Academy
+            </button>
+        </div>
+        <!-- horario -->
+        <div id="horarios" class="m-4">
+            <h2 id="hora">Horarios</h2>
+        </div>
+        <div id="horario" class="seccion">
+
+            <div class="table-responsive text-center">
+                <table class="horarios">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th id="l">Lunes</th>
+                            <th id="ma">Martes</th>
+                            <th id="mi">Miercoles</th>
+                            <th id="j">Jueves</th>
+                            <th id="v">Viernes</th>
+                            <th id="s">Sabado</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>07:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>08:30</td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>09:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>10:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>11:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>11:30</td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>12:30</td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>13:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    <div id="ocultar">
+                        <tr>
+                            <td>14:30</td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>15:30</td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td>
+                                <div class="event entrenamiento3"><span>Cerrado</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>16:00</td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento6 fancybox" href="#e6"><span>CrossFit (gymnastics
+                                        skills)</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>16:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>17:00</td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento6 fancybox">CrossFit (gymnastics
+                                    skills)
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>17:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>18:00</td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>18:30</td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento5"><span>CrossFit (Haltero)</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento5"><span>CrossFit (Haltero)</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>19:00</td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento10 fancybox" href="#e10"><span>Academy</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento10 fancybox" href="#e10"><span>Academy</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>19:30</td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento5"><span>CrossFit (Haltero)</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                                <div class="event entrenamiento8 fancybox" href="#e8"><span>Competitors</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>20:00</td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="event entrenamiento1"><span>CrossFit</span></div>
+                                <div class="event entrenamiento2"><span>Open Box</span></div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Categorias -->
+        <div id="categorias" class="m-4 text-center">
+            <h2 id="categoria-titulo" class="titulos">Tarifas</h2>
+            <select name="categoria" id="categoria">
+                <option value="null" id="select">SELECCIONAR CATEGORÍA</option>
+                <!-- Introducir vía JS -->
+            </select>
+            <div id="card-categoria" class="row justify-content-center mt-5">
+                <!-- Introducir card de la categoria aquí -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Go top-->
+
+    <div class="go-top">
+        <span><img src="https://icon-library.com/images/back-to-top-icon-png/back-to-top-icon-png-0.jpg" alt=""
+                height="50px" width="50px"></span>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="row justify-content-between">
+            <div class="col-4 ">
+                <div class="row ">
+                    <div class="col-12 col-md-6 ml-3">
+                        <p>
+                            <a href="https://www.instagram.com/dark_phoenix_crossfit/?hl=es" class="enlace"
+                                target="_blank">Dark
+                                Phoenix CrossFit
+                                en instagram</a>
+                        </p>
+                        <dl>
+                            <dt>Teléfono</dt>
+                            <dd>695 717 341</dd>
+                            <dt>Dirección</dt>
+                            <dd>
+                                <address>
+                                    Calle Txomin Egileor, 52<br>
+                                    Polígono zugutzu nave 12<br>
+                                    48960 Galdácano, Vizcaya
+                                </address>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <a href="http://journal.crossfit.com/start.tpl?version=CFJ-white123x63" target="_blank"
+                            title="CrossFit Journal: The Performance-Based Lifestyle Resource"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4 buttons">
+                <a href="/" class="enlace">Home</a>
+
+                <br><a href="//normasdelbox.aspx" class="enlace">Aviso legal y condiciones del Box</a>
+                <br>
+                <a href="//wodbuster.com/avisolegal.aspx" class="enlace">Aviso legal</a>
+                <br>
+                <a href="//wodbuster.com/politicadeprivacidad.aspx" class="enlace">Política de privacidad</a>
+                <br>
+                <a href="//wodbuster.com/cookies.aspx" class="enlace">Política de cookies</a>
+            </div>
+            <div class="col-3 col-md-2 footer-buttons">
+                <a class="btn btn-primary btn-block" href="./view/contacto.html" style="color: white;">
+                    Contacto
+                </a>
+                <button type="button" class="btn btn-secondary btn-block" data-target="#dudasModal"
+                    data-toggle="modal">Comentario
+                </button>
+                <small id="commentNotAuth" class="text-light d-none">Para enviar comentarios debes iniciar
+                    sesión</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Dudas -->
+    <div aria-hidden="true" aria-labelledby="dudasModal" class="modal fade" id="dudasModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Comentarios</h5>
+                </div>
+                <form id="dudasForm">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="commentUsername">Nombre:</label>
+                            <input class="form-control" id="commentUsername" data-id="" type="text" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentSubject">Asunto</label>
+                            <input class="form-control" id="commentSubject" type="text" placeholder="Asunto">
+                        </div>
+                        <div class="form-group">
+                            <label for="commentBody">Comentario</label>
+                            <textarea class="form-control" id="commentBody" type="text"
+                                placeholder="Cuerpo del comentario">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="button" id="sendComment">Comment</button>
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./view/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="./view/js/bootstrap.bundle.js"></script>
+    <script src="./view/js/main.js"></script>
+    <script src="./view/js/index.js"></script>
+    <script src="./view/js/competiciones.js"></script>
+</body>
+
+</html>
